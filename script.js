@@ -118,6 +118,7 @@ function buildQuiz(){
    //Saves user-input name, and their finals score.
     window.localStorage.setItem('name',user);
     window.localStorage.setItem('score', finalScore)
+     scoreButton.classList.remove('hide');
     
     
   
