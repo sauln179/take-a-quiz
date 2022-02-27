@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "index.html">
+    <link href="style.css" rel="stylesheet">
+    <title>SCOREBOARD</title>
+</head>
+<body>
+    
+<div class="score-container">
+    <div id ="count">ScoreBoard</div>
+    <ul class = "score-list">
+        <div id ="user">User</div>
+        <div id ="score">Score</div>
+        <button id="delete-btn" class ="delete-btn btn">Delete</button>
+    </ul>
+    <button id ="return-btn" class = "return-btn btn">Return</button>
+        
+    </div>
+    <script src="retrieve.js"></script>
+    <script type="text/javascript">
+        document.querySelector("#return-btn").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+</body>
+</html>

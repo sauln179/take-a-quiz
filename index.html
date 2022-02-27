@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>QUIZ TIME</title>
+</head>
+<body>
+  <div class="container">
+    <div id ="count">Timer:</div>
+    <div id= "question-container" class="hide">
+        <div id ="question">Question</div>
+        <div id ="answer-buttons" class="btn-grid">
+            <button id="btn1">Answer 1</button>
+            <button id="btn2">Answer 2</button>
+            <button id="btn3">Answer 3</button>
+            <button id="btn4">Answer 4</button>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="start-btn" class ="start-btn btn">Start</button>
+        <button id="next-btn" class ="next-btn btn">Next</button>
+        <button id="score-btn" class ="score-btn btn">View Score</button>
+        <button id="finish-btn" class ="finish-btn btn">Finish</button>
+    </div>
+  </div>
+  
+
+  </div> 
+
+
+<script src="script.js"></script>
+<script type="text/javascript">
+  document.querySelector("#score-btn").onclick = function () {
+      location.href = "score.html";
+  };
+</script>
+</body>
+</html>
+<!--Score is calculated like this: (100* .seconds) *total correct/total questions.-->
+
